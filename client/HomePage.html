@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script defer src="/client/js/homePagesocketclient.js"></script>  
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+
+    <title>MotorsGram HomePage</title>
+        <!-- ICONSCOUTH CDN-->
+        <link rel="stylesheet" href="/client/css/HomePage.css">
+   
+    
+    </head> 
+    <body>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          var socket = io();
+        </script>
+        
+        
+        
+        
+        <nav>
+            <div class="container">
+                <h2 class="log">
+                    MotorsGram
+                </h2>
+                <div class="serch-bar">
+                </div>
+
+                    <!----------------Top label where title and logout button is---------->
+                    <div class="Post">`
+                        <label class="logoutButton" for="create-post" id="logout">logoout</label>
+                        <script>
+                            document.querySelector('#logout').addEventListener('click', () => {
+                                window.location.href = 'http://localhost:5000/';
+                            });
+                        </script>
+                    
+                </div>
+            </div>
+        </nav>
+        <!----------------- Each side panel for the main menu--------------------->
+        <main>
+            <div class="container">
+                <!---------------- left side----------->
+                <div class="left">
+                    <a class="chat">
+                        
+                        
+                    </a>
+                    <!-----left side bar for the chat button ------->
+                    <div class="sidebar">
+                       
+                            <button type="submit" class="chatBtn" id="btn1">Chat</button>
+                            <!-----redirect when chat button  is clicked------->
+                            <script>
+                                document.querySelector('#btn1').addEventListener('click', () => {
+                                    window.location.href = 'http://localhost:5000/HomePageChat';
+                                });
+                            </script>
+                    </div>
+                    <!-----DIV TO RACE NEWS ------->
+                    <div class="elfsight-app-3736e02e-194d-4678-8d14-93ba3ea735c9" id="news"></div>
+                </div>
+                <!-- middle side-->
+                <div class="middle">
+                   
+                    <!-- create post input-->
+                    
+
+                    <p id="buttonCount">LIKES: </p>
+                    <form id="create-post">
+                        
+                            <input type="text" placeholder="what's in you mind today?" id="post">
+                            
+                            <input type="file" id="image_input"  class="file-button" accept="image/png, image/jpg">
+                           
+                            <button type="submit" class="button button-primary">Send</button>
+                            
+                    </form>
+                
+                    <div class="messages">
+                        
+                        
+                    </div>
+                        
+                    </div>
+                    
+                
+                        
+                </div>
+               
+
+            </div>
+
+        </main>
+    </body>
+
+
+
+
+
+</html>

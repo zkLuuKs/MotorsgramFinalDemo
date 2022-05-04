@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    background-image: url("https://cdn.about.puma.com/-/media/images/this-is-puma/our-sports/motorsport/motorsport_header_no_logo.jpg?rev=9ab154e1a7d0473b8bf95222607ecbf0");
+    
+
+}
+ /* this is the black middle box for login */
+.box{
+    position: absolute;
+    width: 601px;
+    height: 571px;
+    left: 625px;
+    top: 233px;
+    background: rgba(0, 0, 0, 0.71);
+    text-align: center;
+}
+
+ /* this is the title for the Login box Page */
+.form h1{
+
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 87px;
+    color: #FFFFFF;
+
+}
+/* this is the white square box for the username and password*/
+.form input{
+ 
+    outline: 1;
+    background: #FFFFFF;
+    width: 447px;
+    height: 52px;
+    left: 700px;
+    top: 432px;
+    border: 0;
+    font-family: "Russo One";
+    margin: 0 0 40px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+
+/* rEGISTER button */
+.form button{
+
+    
+    width: 380px;
+    height: 58px;
+
+    font-family: "Russo One";
+    font-size: 24px;
+    background: #FA0000;
+
+    
+}

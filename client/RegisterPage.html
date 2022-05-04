@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lan="en" and dir="Itr">
+    <head>
+        <meta charset="utf -8" >
+        <title> Motorsgram Resgistration </title>
+        <link rel="stylesheet" href="/client/css/RegisterPage.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src='/client/js/RegisterPage.js' async></script>
+    </head>
+        <body>
+            <section class="box">
+                <div class="design">
+            
+                </div>
+                
+                <div class= "form" >
+                     <h1>REGISTER</h1>
+                        <form action="/Register" method="POST">
+                        
+                        <input type = "email"  id="email"class="input-field" placeholder="email">
+                        <input type = "password" id="password" class="input-field" placeholder="password">
+                        
+                                   
+                        
+                        </form>    
+                
+                </div>
+                <div>
+                    <button id="Register" class="register">Register</button>
+                </div>
+                    <button id="Login" class="login">Login</button>
+
+                    <script>
+                        document.querySelector('#Login').addEventListener('click', () => {
+                            window.location.href = 'http://localhost:5000/';
+                        });
+                    </script>
+            </section>
+        </body>
+    
+</html>

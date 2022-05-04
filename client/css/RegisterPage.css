@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    background-image: url("https://i.imgur.com/9J5vxKV.png");
+    
+
+}
+.box{
+    position: absolute;
+    width: 631px;
+    height: 550px;
+    left: 734.5px;
+    top: 93px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.83);
+}
+.box h1{
+
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+   
+    line-height: 87px;
+    color: #ffffff;
+
+}
+.form input{
+ 
+    outline: 1;
+    background: #FFFFFF;
+    width: 447px;
+    height: 52px;
+    left: 700px;
+    top: 432px;
+    border: 0;
+    font-family: "Russo One";
+    margin: 0 0 40px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+.form button{
+    width: 182px;
+    height: 58px;
+    left: 828px;
+    top: 617px;
+    font-family: "Russo One";
+    font-size: 24px;
+    background: #FA0000;
+
+}
+
+.register{
+    width: 470px;
+    height: 58px;
+    left: 828px;
+    top: 617px;
+    font-family: "Russo One";
+    font-size: 24px;
+    background: #FA0000;
+}
+.login{
+    width: 470px;
+    height: 58px;
+    font-family: "Russo One";
+    font-size: 24px;
+}

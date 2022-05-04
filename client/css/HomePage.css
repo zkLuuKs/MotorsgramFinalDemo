@@ -1,0 +1,219 @@
+
+/*fonts for homePage*/
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    background-color: #221E1E;
+    color: rgb(255, 255, 255);
+}
+
+/*Place in  the center*/
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button{
+    display: inline-flex;
+    padding: .8rem 5.3rem;
+    font-weight: 500;
+    width: 122px;
+    height: 45px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: .9rem;
+    overflow: hidden;
+    font-family: "Russo One";
+}
+
+.chatBtn{
+    
+    width: 135px;
+    height: 1000px;
+    border-radius: 3rem;
+    font-family: "Russo One";
+    background-image: url("https://wallpapercave.com/wp/wp7159763.jpg") ;
+    font-size: 25px;
+    
+    top: 100px;
+}
+
+/*Button*/
+.button:hover{
+    opacity: 0.8;
+
+}
+.button-primary{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*Post panel for all the messages post*/
+.messages {
+    position: absolute;
+    top: 100px;
+    width: 900px;
+    height: 1500px;
+    margin: 60px 0;
+    background-image: url("https://wallpaperbat.com/img/429969-corvette-racing-phone-wallpaper.jpg");
+    padding: 20px;
+    overflow-y: scroll;
+  }
+
+/*navagatiion bar Title*/
+
+nav{
+    width: 100%;
+    background-color: #FF0000;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*main side keeps stuff center*/
+
+main{
+    position: relative;
+    top: 5.4rem;
+
+}
+main .container{
+    display: grid;
+    grid-template-columns: 18vh auto 20vw;
+    column-gap: 2rem;
+    position: relative;
+}
+
+
+/* to create a post */
+
+#create-post{
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: whitesmoke;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+}
+
+#create-post input[type="text"]{
+    justify-self: start;
+    width: 100%;
+    padding: 2rem;
+    background: transparent;
+    color: black;
+    margin-right: 1rem;
+    font-family: "Russo One";
+    font-size: 22px;
+}
+.logoutButton{
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar{
+    width: 2em;
+}
+::-webkit-scrollbar-track{
+     background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: hsl(0 100% 15% /1);
+}
+
+
+/*DIV OF THE MESSAGE WHEN SEND BUTTON IS CLICKED */
+.MessagesBox{
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: rgb(252, 7, 7);
+	border-radius: 5px;
+}
+.MessagesBox {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y:scroll;
+}
+
+/*PAINEL FOR TIME AND NAME ON THE MESSAGE*/
+.messages .MessagesBox .meta {
+	font-size: 19px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+.MessagesBox .meta span {
+	color: rgb(0, 0, 0);
+    
+}
+
+/*LIKE BUTTON*/
+
+.messages .likeButton{
+    font-weight: 500;
+    width: 122px;
+    height: 35px;
+    border-radius: 7rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+#news {
+    
+    width: 300px;
+    height: 400px;
+    left: 1200px;
+    top: -848px;
+}
+.likeBtn{
+    font-weight: 500;
+    right: 400px;
+    width: 122px;
+    height: 35px;
+    border-radius: 7rem;
+    cursor: pointer;
+    font-family: "Russo One";
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255); 
+}
+
+.Likebox{
+	padding: 1220px;
+	margin-bottom: 1115px;
+	background-color: rgb(252, 7, 7);
+	border-radius: 5px;
+}
+.Likebox {
+	padding: 300px;
+	max-height: 1500px;
+	overflow-y: scroll;
+}
