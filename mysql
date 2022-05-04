@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS moto;
+CREATE DATABASE moto;
+
+-- select the database
+USE moto;
+
+-- create the tables
+CREATE TABLE accounts
+(
+   id			INT	            PRIMARY KEY		AUTO_INCREMENT,
+  password        	VARCHAR(50)  	NOT NULL,
+  email		   		VARCHAR(50)		NOT NULL UNIQUE
+);
