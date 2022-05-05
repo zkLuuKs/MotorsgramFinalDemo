@@ -25,17 +25,17 @@ socket.on('chat-message', post =>{
   chatMessage.scrollTop = chatMessage.scrollHeight;
   
 });
-// Like button 
+
 
 
 // Message Submit
 postForm.addEventListener('submit', event =>{
   event.preventDefault();
 
-// Get Message text
+// Message text
   const post = event.target.elements.post.value;
   
-  // Emit message to the server
+  // Send the  message to the server
   socket.emit('createPost', post);
 
   // clear message inputs
@@ -46,18 +46,12 @@ postForm.addEventListener('submit', event =>{
 });
 
 
-function buttonClicked(){
-  socket.emit('clicked');
+  function buttonClicked(){
+    
+    socket.emit('clicked');
 
-
-}
-
-
-
-//$('#btn_click').on('click', function(event){
- // socket.emit('clicked', {id: event.target});
-//})
-
+    }
+    
 socket.on('buttonUpdate',function(data){
   //$(data.id).trigger('click');
   document.getElementById("buttonCount").innerHTML = 'LIKES:'+ data ;
@@ -68,7 +62,7 @@ socket.on('buttonUpdate',function(data){
 
 
   
-// Output Message 
+// Output Message  and the like function
 
 function outputMessage(data){
   

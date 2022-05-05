@@ -25,9 +25,5 @@ var router = function(app){
     });
     
 
-    app.get("/HomePageNewChat" , function(req, res){
-        res.status(200).sendFile(path.join(__dirname + "/../client/pikadeboi.html"));
-    });
-
 };
 module.exports = router; 

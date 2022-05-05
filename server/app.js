@@ -1,8 +1,8 @@
 const express = require('express');
-const cors= require('cors');
+const cors = require('cors');
 const app = express();
 const path = require("path");
-const bodyParser  = require('body-parser');
+const bodyParser = require('body-parser');
 
 
 
@@ -14,7 +14,7 @@ app.use((req, res, next) => {
 });
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/client", express.static(path.resolve(__dirname + "/../client/")));
 
 // make the server 
@@ -31,8 +31,8 @@ var services = require("./services.js");
 services(app);
 
 
-server = app.listen(port, function(err){
-    if(err) {
+server = app.listen(port, function (err) {
+    if (err) {
         throw err;
     }
     console.log("Listening on Port: " + port);

@@ -1,6 +1,6 @@
 const moment = require('moment')
 
-function formatMessage(username, text, likes ){
+function MessageFormat(username, text, likes ){
     return {
         username,
         text, 
@@ -11,4 +11,4 @@ function formatMessage(username, text, likes ){
     
 }
 
-module.exports = formatMessage;
+module.exports = MessageFormat;

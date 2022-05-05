@@ -1,10 +1,10 @@
 /* ==================================================================================== */
 /* This file contains the code used to for routing socket.io calls                      */
 /* ==================================================================================== */
-const formatMessage = require('./messages');
+const MessageFormat = require('./messages');
 //var Sockets = require('./sockets');
 let messages =[];
-let likes = [];
+//let likes = [];
 var clickCount = 0;
 const botName = 'MotorsGramsBOT'
 
@@ -22,8 +22,8 @@ var socketRouter = function(io) {
       socket.emit('previousMessages', messages);
 
       console.log(`socket connected: ${socket.id}`);
-      socket.emit('chat-message', formatMessage(botName, 'Welcome to MotorsGram!'))
-      socket.broadcast.emit('chat-message',formatMessage(botName, 'A user has joined'));
+      socket.emit('chat-message', MessageFormat(botName, 'Welcome to MotorsGram!'))
+      socket.broadcast.emit('chat-message',MessageFormat(botName, 'A MotorsGram USER has joined'));
        //If you need to do something initially
     
       
@@ -42,7 +42,7 @@ var socketRouter = function(io) {
       
       console.log(post);
         //Send back to everyone, including sender
-      io.emit('chat-message',formatMessage('MOTORSGRAM USER',post));
+      io.emit('chat-message',MessageFormat('MOTORSGRAM USER',post));
      
 
     
